@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#8BCEF6"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <!-- CoinWatch Logo -->
+    <!-- Dashboard Title -->
+
+    <!-- Add New Expense Button -->
+
+    <!-- View Analytics Button -->
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="88dp"
+        android:contentDescription="CoinWatch Logo"
+        android:src="@drawable/ic_coinwatch_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDashboardTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="CoinWatch Dashboard"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.371" />
+
+    <Button
+        android:id="@+id/btnAddExpense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text=" Add New Expense"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDashboardTitle" />
+
+    <Button
+        android:id="@+id/btnViewAnalytics"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=" View Spending Insights"
+        app:layout_constraintTop_toBottomOf="@id/btnAddExpense"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Budget Goals Button -->
+    <Button
+        android:id="@+id/btnBudgetGoals"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=" Set Budget Goals"
+        app:layout_constraintTop_toBottomOf="@id/btnViewAnalytics"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- ATM Locator Button -->
+    <Button
+        android:id="@+id/btnATMLocator"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=" Locate Nearby ATMs"
+        app:layout_constraintTop_toBottomOf="@id/btnBudgetGoals"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
