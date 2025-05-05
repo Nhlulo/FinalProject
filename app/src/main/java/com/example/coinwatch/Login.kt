@@ -2,6 +2,7 @@ package com.example.coinwatch
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
@@ -16,6 +17,14 @@ class Login : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         val signUpRedirect = findViewById<TextView>(R.id.signUpRedirect)
+        val lLogin = findViewById<Button>(R.id.loginButton)
+
+        lLogin.setOnClickListener {
+
+            val intentu = Intent(this,DashboardActivity::class.java)
+            startActivity(intentu)
+
+        }
 
         signUpRedirect.setOnClickListener {
             try {
